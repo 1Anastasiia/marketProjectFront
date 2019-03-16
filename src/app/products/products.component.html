@@ -1,0 +1,14 @@
+
+<div class="row">
+  <div class="col-12 col-sm-6 col-md-4" *ngFor="let p of products">
+    <div class="thumbnail">
+      <!--<img src="{{p.thumbnailUrl}}" alt="...">-->
+      <a [routerLink] = "'/products/' + p.id"><img src="" alt="..."></a>
+      <div class="caption">
+        <h3>{{p.title}}</h3>
+        <p><a routerLink="{{p.url}}" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+.bg-color{
+  background-color: green;
+}
+
+.txt-color{
+  color: darkcyan;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.fa-1x {
+  font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+.dark-blue-text {
+  color: #0A38F5;
+}
+.dark-pink-text {
+  color: #AC003A;
+}
+.dark-amber-text {
+  color: #ff6f00;
+}
+.dark-teal-text {
+  color: #004d40;
+}
+
+/*// Малые девайсы («ландшафтные телефоны», >= 576px)*/
+/*@media (min-width: 576px) { ... }*/
+
+/*// Средние девайсы («таблетки», >= 768px)*/
+/*@media (min-width: 768px) { ... }*/
+
+/*// Большие девайсы (десктопы, >= 992px)*/
+/*@media (min-width: 992px) { ... }*/
+
+/*// Экстрабольшие девайсы (большие десктопы, >= 1200px)*/
+/*@media (min-width: 1200px) { ... }*/
+
+/*// Экстрамалые девайсы («портретные телефоны», < 576px)*/
+/*@media (max-width: 575.98px) { ... }*/
+
+/*// Малые девайсы («ландшафтные», >= 575px)*/
+/*@media (min-width: 576px) and (max-width: 767.98px) { ... }*/
+
+/*// Средние девайсы («таблетки», >= 768px)*/
+/*@media (min-width: 768px) and (max-width: 991.98px) { ... }*/
+
+/*// Большие девайсы (большие десктопы, >= 992px)*/
+/*@media (min-width: 992px) and (max-width: 1199.98px) { ... }*/
+
+/*// Большие девайсы (большие десктопы, >= 1200px)*/
+/*@media (min-width: 1200px) { ... }*/
+
+/*//*/
+/*Пример: Скрыто начало с `min-width: 0`, а затем отображается на брекпоинте `sm`*/
+
+.custom-class {
+  display: none;
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .custom-class {
+    display: block;
+  }}
+
+.custom-class2 {
+  display: none;
+}
+@media (min-width: 768px){
+  .custom-class2 {
+    display: block;
+  }}
+

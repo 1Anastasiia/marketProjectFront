@@ -1,0 +1,78 @@
+<!--<nav class="navbar navbar-expand-lg navbar-dark primary-color bg-color">-->
+<!--<a class="navbar-brand" href="/">Internet Market</a>-->
+<!--</nav>-->
+<!--Navbar-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark primary-color bg-color">
+
+  <!-- Navbar brand -->
+
+  <a class="navbar-brand" href="/">Internet Market</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+           aria-expanded="false">Categories</a>
+        <div class="dropdown-menu dropdown-default bg-color" aria-labelledby="navbarDropdownMenuLink">
+          <app-category></app-category>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="wishes">Wishes {{counter}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="purchase">Purchase 22</a>
+      </li>
+    </ul>
+    <!-- Links right side-->
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
+           aria-expanded="false">
+          User name
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default bg-color" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="nav-link" routerLink="proffile">My account</a>
+          <a class="nav-link" routerLink="registration">Log in</a>
+          <div class="dropdown-divider"></div>
+          <a class="nav-link" (click)="OnClicButton()">Log out</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+    <form #SearchForm = ngForm class="form-inline">
+        <input [(ngModel)]="searchObj.search" name="search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <a class="nav-link" routerLink="search" (click)="SendDataSearch(SearchForm)">Search</a>
+    </form>
+    </ul>
+  </div>
+  <!-- Collapsible content  -->
+
+</nav>
+<!--/.Navbar-->
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+<script>
+  $('#search').mdbDropSearch();
+</script>
+
+
+
+
+

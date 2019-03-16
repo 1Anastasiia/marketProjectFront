@@ -1,0 +1,25 @@
+<!--<div class="single-product-place-holder">-->
+  <!--<ul>-->
+    <!--<li>{{product.category}}</li>-->
+    <!--<li>{{product.price}}</li>-->
+    <!--<li>{{product.detales}}</li>-->
+  <!--</ul>-->
+  <!--<p>poduct</p>-->
+
+<!--</div>-->
+<p>
+  single products works!
+</p>
+
+<div class="row" *ngIf="product">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src={{product.thumbnailUrl}} alt="...">
+      <div class="caption">
+        <h3>{{product.title}}</h3>
+        <p>{{product.albumId}}</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
