@@ -6,7 +6,7 @@
 
   <!-- Navbar brand -->
 
-  <a class="navbar-brand" href="/">Internet Market</a>
+  <a class="navbar-brand" routerLink="/">Internet Market</a>
   <!-- Collapse button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
         </div>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home
+        <a class="nav-link" routerLink="/">Home
           <span class="sr-only">(current)</span>
         </a>
 
@@ -55,10 +55,10 @@
       </li>
     </ul>
     <ul class="navbar-nav">
-    <form #SearchForm = ngForm class="form-inline">
-        <input [(ngModel)]="searchObj.search" name="search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <a class="nav-link" routerLink="search" (click)="SendDataSearch(SearchForm)">Search</a>
-    </form>
+      <form #SearchForm = ngForm class="form-inline">
+          <input [(ngModel)]="searchObj.search" name="search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <a class="nav-link" routerLink="search" (click)="SendDataSearch(SearchForm)">Search</a>
+      </form>
     </ul>
   </div>
   <!-- Collapsible content  -->
