@@ -21,4 +21,5 @@ export class AppComponent {
   SendDataSearch(data) {
     console.log(data);
   }
+
 }

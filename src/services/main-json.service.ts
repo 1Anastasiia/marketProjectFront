@@ -3,6 +3,7 @@ import {Product} from '../models/Product';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Category} from '../models/Category';
+import {Hosts} from '../models/Hosts';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,8 @@ import {Category} from '../models/Category';
 export class MainJsonService {
 
   productsUrl = 'https://jsonplaceholder.typicode.com/photos';
-  categoriesUrl = 'https://jsonplaceholder.typicode.com/photos';
+  //categoriesUrl = 'https://jsonplaceholder.typicode.com/photos';
+  categoriesUrl = 'http://localhost:3000/categories';
   productsSelectedByCategoryUrl = 'https://jsonplaceholder.typicode.com/photos';
 
 

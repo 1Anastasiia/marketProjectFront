@@ -16,6 +16,9 @@ import { WishesComponent } from './wishes/wishes.component';
 import { UserProffileComponent } from './user-proffile/user-proffile.component';
 import {FormsModule} from '@angular/forms';
 import { SearchComponent } from './search/search.component';
+import {MainJsonService} from '../services/main-json.service';
+import {UserJsonService} from '../services/user-json.service';
+import { LoginComponent } from './login/login.component';
 
 // routes interface
 const routes: Routes = [
@@ -23,7 +26,8 @@ const routes: Routes = [
   {path: 'categories', component: CategoryComponent},
   {path: 'category/:categoryId', component: ProductsByCategoryComponent},
   {path: 'products/:id', component: SingleProductComponent},
-  {path: 'registration', component: RegistrationComponent},
+  {path: 'users/register', component: RegistrationComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'purchase', component: PurchaseComponent},
   {path: 'wishes', component: WishesComponent},
   {path: 'proffile', component: UserProffileComponent},
@@ -42,7 +46,8 @@ const routes: Routes = [
     PurchaseComponent,
     WishesComponent,
     UserProffileComponent,
-    SearchComponent
+    SearchComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,10 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule
   ],
-  providers: [],
+  providers: [
+    MainJsonService,
+    UserJsonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

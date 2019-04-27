@@ -1,3 +1,97 @@
+
+<form #registrationForm="ngForm">
+  Name: <br>
+  <input type="text"
+         name="name"
+         ngModel
+         #name ='ngModel'
+         required
+
+  ><br>
+  Surname: <br>
+  <input ngModel
+         type="text"
+         #surname ='ngModel'
+         name="surname"
+         required
+
+  ><br>
+  Email: <br>
+  <input ngModel
+         type="text"
+         #email = ngModel
+         name="email"
+         email
+         required
+  ><br>
+  Password: <br>
+  <input ngModel
+         type="password"
+         #password = 'ngModel'
+         name="password"
+         required
+  ><br>
+  Birth date: <br>
+  <input ngModel
+         type="text"
+         #birth_date = 'ngModel'
+         name="birth_date"
+         required
+  ><br>
+  Country: <br>
+  <input ngModel
+         type="text"
+         #country = 'ngModel'
+         name="country"
+         required
+  ><br>
+  City: <br>
+  <input ngModel
+         type="text"
+         #city = ngModel
+         name="city"
+         required
+
+  ><br>
+  Street: <br>
+  <input ngModel
+         type="text"
+         #street = 'ngModel'
+         name="street"
+         required
+  ><br>
+  Apartment: <br>
+  <input ngModel
+         type="text"
+         #apartment = 'ngModel'
+         name="apartment"
+         required
+  ><br>
+  Postal code: <br>
+  <input ngModel
+         type="text"
+         #postal_code = 'ngModel'
+         name="postal_code"
+         required
+
+  ><br><br>
+  <button
+    (click)="sendRegistrationObj(
+              name.value,
+              surname.value,
+              email.value,
+              password.value,
+              birth_date.value,
+              country.value,
+              city.value,
+              street.value,
+              apartment.value,
+              postal_code.value)"
+    [disabled]="registrationForm.invalid">Register your self</button>
+</form>
+
+
 <p>
   registration works!
+
 </p>
