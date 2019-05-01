@@ -1,0 +1,30 @@
+<form #loginForm='ngForm'>
+  Email: <br>
+  <input
+         type="text"
+         ngModel
+         name="email"
+         email
+         required
+         value="email"
+         #email = 'ngModel'
+  > <br>
+  Password: <br>
+  <input
+    type="password"
+         ngModel
+         name="password"
+         required
+         value="Password"
+    #password = 'ngModel'
+  >
+  <br><br>
+  <button
+    (click)= "sendLoginObj(
+    email.value,
+    password.value
+    )"
+    [disabled]="loginForm.invalid">
+  Login </button>
+</form>
+

@@ -27,10 +27,10 @@ const routes: Routes = [
   {path: 'category/:categoryId', component: ProductsByCategoryComponent},
   {path: 'products/:id', component: SingleProductComponent},
   {path: 'users/register', component: RegistrationComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'users/login', component: LoginComponent},
   {path: 'purchase', component: PurchaseComponent},
   {path: 'wishes', component: WishesComponent},
-  {path: 'proffile', component: UserProffileComponent},
+  {path: 'users/proffile', component: UserProffileComponent},
   {path: 'search', component: SearchComponent}
 ];
 
